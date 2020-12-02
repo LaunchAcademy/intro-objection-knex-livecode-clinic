@@ -10,7 +10,8 @@ All the React code has been provided, but it will be up to us set up the databas
 
 ### Goals
 
-- Create a table for `boardgames`. The `title`, `minimum amount of players`, and `maximum amount of players` are required, while a `description` is optional.
+- Create a table for `boardgames`. The `title`, `minimum amount of players`, and `maximum amount of players` are required.
+- Now let's add an optional `description` column to the `boardgames` table in another migration.
 - Work in the `repl` with `yarn run console` from within the `server` folder in your terminal
 - The `fetch` statements have already been set up and will not need to be edited. Add the correct API endpoints that each `fetch` is looking for.
 - Make sure you are now returning a `json` object at these endpoints!
