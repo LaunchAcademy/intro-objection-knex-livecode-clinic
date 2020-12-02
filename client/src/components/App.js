@@ -1,10 +1,22 @@
-import React from "react";
-import { hot } from "react-hot-loader/root";
+import React from "react"
+import { Route, Switch, BrowserRouter } from "react-router-dom"
+import { hot } from "react-hot-loader/root"
 
-import "../assets/scss/main.scss";
+import BoardGamesIndex from "./BoardGamesIndex"
+import BoardGamesShow from "./BoardGamesShow"
 
-const App = props => {
-  return <h1>Hello from React</h1>;
-};
+import "../assets/scss/main.scss"
 
-export default hot(App);
+const App = (props) => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={BoardGamesIndex} />
+        <Route exact path="/boardgames" component={BoardGamesIndex} />
+        <Route exact path="/boardgames/:id" component={BoardGamesShow} />
+      </Switch>
+    </BrowserRouter>
+  )
+}
+
+export default hot(App)
