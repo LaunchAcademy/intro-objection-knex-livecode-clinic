@@ -7,6 +7,7 @@
     "migrate:latest": "knex --knexfile ./knexfile.cjs migrate:latest",
     "migrate:rollback": "knex --knexfile ./knexfile.cjs migrate:rollback",
     "migrate:make": "knex --knexfile ./knexfile.cjs migrate:make",
+    "seed": "node ../server/bin/seed.js",
     "test": "jest",
     "ci": "jest --coverage",
     "generate-secret": "./scripts/generate-secret.js"
