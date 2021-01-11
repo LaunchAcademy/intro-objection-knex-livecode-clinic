@@ -6,12 +6,9 @@
     "client"
   ],
   "scripts": {
-    "build:client": "yarn workspace run-from-server-client build",
+    "build:client": "yarn workspace introduction-to-objection-knex-clinic-client build",
     "dev": "yarn workspace introduction-to-objection-knex-clinic-server dev",
     "dev:debug": "yarn workspace introduction-to-objection-knex-clinic-server dev:debug",
-    "dev:server:debug": "PORT=4000 yarn workspace introduction-to-objection-knex-clinic-server dev:debug",
-    "dev:server": "PORT=4000 yarn workspace introduction-to-objection-knex-clinic-server dev",
-    "dev:client": "yarn workspace introduction-to-objection-knex-clinic-client dev",
     "heroku-postbuild": "yarn workspace introduction-to-objection-knex-clinic-client build",
     "start": "yarn workspace introduction-to-objection-knex-clinic-server start"
   },
