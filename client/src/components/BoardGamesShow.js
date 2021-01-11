@@ -8,14 +8,14 @@ const BoardGamesShow = (props) => {
   const getGame = async () => {
     let id = props.match.params.id
     try {
-      const response = await fetch(`http://localhost:3000/api/v1/boardgames/${id}`)
+      const response = await fetch(`/api/v1/boardgames/${id}`)
       if (!response.ok) {
         const errorMessage = `${response.status} (${response.statusText})`
         const error = new Error(errorMessage)
         throw error
       }
       const responseBody = await response.json()
-      setBoardGame(responseBody.boardgame)
+      setBoardGame(responseBody.boardGame)
     } catch (err) {
       console.error("Error in fetch!")
       console.error(err)
