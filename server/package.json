@@ -19,7 +19,7 @@
   "version": "0.0.1",
   "name": "introduction-to-objection-knex-clinic-server",
   "engines": {
-    "node": "~14.8"
+    "node": "^14.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
