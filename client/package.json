@@ -8,7 +8,7 @@
   "name": "introduction-to-objection-knex-clinic-client",
   "version": "0.0.1",
   "engines": {
-    "node": "~14.8"
+    "node": "^14.8"
   },
   "devDependencies": {
     "react-dom": "npm:@hot-loader/react-dom",
