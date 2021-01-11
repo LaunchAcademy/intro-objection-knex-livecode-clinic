@@ -15,6 +15,7 @@ const BoardGamesShow = (props) => {
         throw error
       }
       const responseBody = await response.json()
+      // debugger
       setBoardGame(responseBody.boardGame)
     } catch (err) {
       console.error("Error in fetch!")

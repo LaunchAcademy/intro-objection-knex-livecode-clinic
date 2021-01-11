@@ -1,2 +1,4 @@
 const Model = require("./Model")
-module.exports = { Model }
+const BoardGame = require("./BoardGame")
+
+module.exports = { Model, BoardGame }
